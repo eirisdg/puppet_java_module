@@ -2,7 +2,7 @@
 
 class java::install {
 
-    package { ['epel-release', 'java-1.7.0-openjdk']:
+    package { 'openjdk-8-jdk':
         ensure => installed,
     }
 
