@@ -1,8 +1,8 @@
 
 
-class java::install {
+class java::install inherits java {
 
-    package { 'openjdk-8-jdk':
+    package { $::java::java8:
         ensure => installed,
     }
 
